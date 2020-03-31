@@ -14,7 +14,8 @@
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./test,./npm-debug.log --copy-files,./sass",
     "sass": "node-sass --watch sass -o public",
     "start-dev": "nodemon index.js",
-    "start": "npm run build && node dist/index.js"
+    "start": "node index.js",
+    "start-dist": "npm run build && node dist/index.js"
   },
   "keywords": [
     "webshop",
